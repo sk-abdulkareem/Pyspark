@@ -1,6 +1,11 @@
-# pyspark-zero-to-hero
-Learn PySpark from Basics to Advanced. 
+Test.py run from command
 
-Checkout the YouTube Series : [PySpark - Zero to Hero] 
+# Conver Notebook to Python File
+jupyter nbconvert --to python 01_spark_session.ipynb
 
-URL - https://youtube.com/playlist?list=PL2IsFZBGM_IHCl9zhRVC1EXTomkEp_1zm
+# Git Commands
+git status
+git add .
+git commit -m "message"
+git push -u origin main
+git checkout -b pyspark-branch
