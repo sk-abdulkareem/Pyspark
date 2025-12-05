@@ -1,0 +1,3 @@
+input_path: "s3://prod-bucket/raw/orders/"
+output_path: "s3://prod-bucket/processed/orders/"
+shuffle_partitions: 200
