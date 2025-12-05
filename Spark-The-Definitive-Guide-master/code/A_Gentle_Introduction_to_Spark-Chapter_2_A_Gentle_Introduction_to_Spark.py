@@ -1,3 +1,8 @@
+from spark_session import get_spark
+from spark_session import keep_ui_alive
+
+spark = get_spark("File 1 Job")
+
 myRange = spark.range(1000).toDF("number")
 
 
@@ -12,7 +17,7 @@ flightData2015 = spark\
   .read\
   .option("inferSchema", "true")\
   .option("header", "true")\
-  .csv("/data/flight-data/csv/2015-summary.csv")
+  .csv("E:/Github/Pyspark/Spark-The-Definitive-Guide-master/data/flight-data/csv/2015-summary.csv")
 
 # COMMAND ----------
 
@@ -80,3 +85,8 @@ flightData2015\
 
 
 # COMMAND ----------
+
+keep_ui_alive(10)
+
+spark.stop()
+print("🛑 Spark stopped.")
